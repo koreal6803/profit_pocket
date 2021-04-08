@@ -4,13 +4,13 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  router: {
+    base: '/profit_pocket/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'crypto_pocket',
-    router: {
-      base: '/profit_pocket/'
-    },
+
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
