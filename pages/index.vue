@@ -110,6 +110,8 @@
                 />
     </a-col>
   </a-row>
+  <br/>
+  <p>USDT與新台幣換算，請參考<a href="https://max.maicoin.com/markets/usdttwd" target="_blank">MAX平台</a>。</p>
           </a-card>
         <br/>
           <a-table :columns="columns" :data-source="info.txns" bordered>
@@ -121,11 +123,10 @@
     </template>
   </a-table>
         </div>
-
       </div>
     </a-layout-content>
     <a-layout-footer :style="{ textAlign: 'center' }">
-      Profit Pocket
+      <img src="~/assets/logo_background.png" width="240">
     </a-layout-footer>
   </a-layout>
 </template>
@@ -204,6 +205,7 @@ export default {
           if (account !== null) {
             this.account_login(account, password)
           }
+          document.querySelector('body').style.backgroundColor = '#f0f2f5'
       }
     });
   },
@@ -237,7 +239,7 @@ export default {
       const hide = this.$message.loading('正在登入..', 0)
       this.viewStatus = 'loading'
       try {
-        const data = await this.$axios.$post('https://us-central1-finlab-298104.cloudfunctions.net/function-1', {'account':account, 'password':password})
+        const data = await this.$axios.$post('https://asia-east2-finlab-298104.cloudfunctions.net/function-2', {'account':account, 'password':password})
         console.log(data)
         this.$message.success('登入成功')
         this.viewStatus = 'login'
