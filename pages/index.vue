@@ -172,6 +172,7 @@
           <Plotly
             :data="data"
             :layout="layout"
+            :config="{responsive: true}"
             :display-mode-bar="false"
           ></Plotly>
         </div>
