@@ -160,7 +160,7 @@
             </a-row>
             <br />
             <p>
-              USDT與新台幣換算，請參考<a
+              USDT與新台幣換算請參考<a
                 href="https://max.maicoin.com/markets/usdttwd"
                 target="_blank"
                 >MAX平台</a
