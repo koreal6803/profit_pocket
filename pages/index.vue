@@ -178,7 +178,7 @@
         </div>
       </div>
     </a-layout-content>
-    <a-layout-footer :style="{ textAlign: 'center' }">
+    <a-layout-footer :style="{ textAlign: 'center', autosizable: true}">
       <img src="~/assets/logo_background.png" width="240" />
     </a-layout-footer>
   </a-layout>
@@ -240,6 +240,7 @@ export default {
           tickformat: '.1%',
           showgrid: false,
           zeroline: true,
+          fixedrange: true,
           zerolinecolor: '#eee',
           tickfont: {
             color: '#aaa'
@@ -249,7 +250,8 @@ export default {
           showgrid: false,
           tickfont: {
             color: '#aaa'
-          }
+          },
+          fixedrange: true
         },
         
         height: 200,
@@ -260,6 +262,8 @@ export default {
           t: 20,
           pad: 4,
         },
+        autosize: true,
+        hovermode: false,
       },
     }
   },
