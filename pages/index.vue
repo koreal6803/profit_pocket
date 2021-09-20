@@ -91,7 +91,7 @@
         <a-skeleton active v-show="viewStatus == 'loading'" />
 
         <div v-show="viewStatus == 'login'">
-          <a-alert message="大家好，由於比特幣加密行情看好，九月將策略調整成「潛在獲利較高」的投資組合，最大風險預期控制在（-20%），但年化報酬預期可以超過 +50%。季底（2021-12-31）有獲利就會分潤。" type="info" closable show-icon />
+          <a-alert message="九月是比較困難的月份，此月1號起，比特幣下跌了 -10％，整體加密貨幣下跌 -12％～20％ 不等，相比之下我們的策略明顯優於大盤。以數據而言，加密貨幣市場的基本面尚好，稍早已減少部位，並持有大量 USDT 準備在比特幣 40,000 左右逢低買回。" type="info" closable show-icon />
           <br/>
           <a-card>
             <a-row>
