@@ -91,7 +91,10 @@
         <a-skeleton active v-show="viewStatus == 'loading'" />
 
         <div v-show="viewStatus == 'login'">
-          <!--<a-alert message="九月是比較困難的月份，此月1號起，比特幣下跌了 -10％，整體加密貨幣下跌 -12％～20％ 不等，相比之下我們的策略明顯優於大盤。以數據而言，加密貨幣市場的基本面尚好，稍早已減少部位，並持有大量 USDT 準備在比特幣 40,000 左右逢低買回。" type="info" closable show-icon />-->
+          <a-alert message="於12-14號顯示數據有問題，已經修正！會確保大家這幾個月獲利正的，不用擔心。" type="info" closable show-icon />
+          <a-alert message="各大交易所 12 月清退中國用戶，導致散戶賣出，但主力逢低買進，從沒這麼樂觀過！" type="info" closable show-icon />
+          <a-alert message="要是你有買幣，就知道當前績效最近絕對是很優值的！" type="info" closable show-icon />
+          <a-alert message="我們最差的時候還賺錢，市況好的時候更可觀～" type="info" closable show-icon />
           <br/>
           <a-card>
             <a-row>
