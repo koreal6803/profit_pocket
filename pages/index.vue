@@ -91,10 +91,7 @@
         <a-skeleton active v-show="viewStatus == 'loading'" />
 
         <div v-show="viewStatus == 'login'">
-          <a-alert message="於12-14號顯示數據有問題，已經修正！會確保大家這幾個月獲利正的，不用擔心。" type="info" closable show-icon />
-          <a-alert message="各大交易所 12 月清退中國用戶，導致散戶賣出，但主力逢低買進，從沒這麼樂觀過！" type="info" closable show-icon />
-          <a-alert message="要是你有買幣，就知道當前績效最近絕對是很優值的！" type="info" closable show-icon />
-          <a-alert message="我們最差的時候還賺錢，市況好的時候更可觀～" type="info" closable show-icon />
+          <a-alert message="本期獲利會全部返還，下一季將以獲利 10% 當作營運成本，欲加減碼請於 12-31 號以前告知" type="info" closable show-icon />
           <br/>
           <a-card>
             <a-row>
