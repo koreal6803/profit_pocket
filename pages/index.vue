@@ -91,7 +91,7 @@
         <a-skeleton active v-show="viewStatus == 'loading'" />
 
         <div v-show="viewStatus == 'login'">
-          <a-alert message="本期獲利會全部返還，下一季將以獲利 10% 當作營運成本，欲加減碼請於 12-31 號以前告知" type="info" closable show-icon />
+          <a-alert message="本期獲利會全部返還，下一季將以獲利 10% 當作營運成本，沒獲利則免付，欲加減碼請於 12-31 號以前告知" type="info" closable show-icon />
           <br/>
           <a-card>
             <a-row>
