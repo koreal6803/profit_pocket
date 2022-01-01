@@ -91,7 +91,7 @@
         <a-skeleton active v-show="viewStatus == 'loading'" />
 
         <div v-show="viewStatus == 'login'">
-          <a-alert message="本期獲利會全部返還，下一季將以獲利 10% 當作營運成本，沒獲利則免付，欲加減碼請於 12-31 號以前告知" type="info" closable show-icon />
+          <a-alert message="新年快樂！" type="info" closable show-icon />
           <br/>
           <a-card>
             <a-row>
@@ -348,12 +348,15 @@ export default {
         this.viewStatus = 'login'
         this.info = data
 
-        const initialCap = this.info.series['2021-09-01 11:00:08.598543']
+        const initialCap = this.info.series['2021-12-31 00:16:03.308356']
+        //const initialCap = Object.keys(this.info.series).reduce((key, v) => obj[v] < obj[key] ? v : key);
+
         for (let key in this.info.series) {
           this.data[0].x.push(key)
           this.data[0].y.push((this.info.series[key] / initialCap - 1))
         }
       } catch (error) {
+        console.log(error.response)
         this.$message.error('登入失敗')
         this.viewStatus = 'logout'
       }
