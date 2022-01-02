@@ -352,8 +352,11 @@ export default {
         //const initialCap = Object.keys(this.info.series).reduce((key, v) => obj[v] < obj[key] ? v : key);
 
         for (let key in this.info.series) {
-          this.data[0].x.push(key)
-          this.data[0].y.push((this.info.series[key] / initialCap - 1))
+          const x = key
+          const y = (this.info.series[key] / initialCap - 1)
+          this.data[0].x.push(x)
+          this.data[0].y.push(y)
+          console.log(x,y)
         }
       } catch (error) {
         console.log(error.response)
